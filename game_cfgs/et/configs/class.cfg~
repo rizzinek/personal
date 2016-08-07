@@ -1,0 +1,23 @@
+set cls_reset "set sld vstr sld0;set eng vstr eng0;set cov vstr cov0"
+
+set sld0 "vstr cls_reset;class s 1; echo '^2Soldier ^ywith ^2SMG';set sld vstr sld1"
+set sld1 "class s 4; echo '^2Soldier ^ywith ^2Panzer';set sld vstr sld0"
+set sld "vstr sld0"
+bind "F1" "vstr sld"
+
+set mdc "vstr cls_reset;class m 1; echo '^2Medic!'"
+bind "F2" "vstr mdc"
+
+set eng0 "vstr cls_reset;class e 1;echo '^2Engi ^ywith ^2SMG';set eng vstr eng1"
+set eng1 "class e 2;echo '^2Engi ^ywith ^2Rifle';set eng vstr eng0"
+set eng "vstr eng0"
+bind "F3" "vstr eng"
+
+set fop "vstr cls_reset;class f 1;echo '^2Fops!'"
+bind "F4" "vstr fop"
+
+set cov0 "vstr cls_reset;class c 1;echo '^2Covops ^ywith ^2Sten';set cov vstr cov1"
+set cov1 "class c 2;echo '^2Covops ^ywith ^2FG42';set cov vstr cov2"
+set cov2 "class c 3;echo '^2Covops ^ywith ^2Snipah';set cov vstr cov0"
+set cov "vstr cov0"
+bind "F5" "vstr cov0"

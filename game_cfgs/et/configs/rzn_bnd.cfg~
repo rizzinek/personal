@@ -1,0 +1,102 @@
+unbindall
+
+set rtime "timerset 30"
+set btime "timerset 20"
+
+//1)Movement
+bind w "+forward"
+bind s "+back"
+bind a "+moveleft"
+bind d "+moveright"
+bind SHIFT "+sprint"
+bind c "+movedown"
+bind q "+leanleft"
+bind e "+leanright"
+bind x "+prone"
+bind CTRL "+speed"
+bind SPACE "+moveup"
+
+//2)Actions
+//set pewpew_on "+attack;+sprint"
+//set pewpew_off "-attack;-sprint"
+//bind MOUSE1 "+vstr pewpew_on pewpew_off"
+bind MOUSE1 "+attack"
+bind MOUSE2 "+movedown"
+bind MOUSE3 "weapalt"
+bind r "+reload"
+bind t "kill;forcetapout"
+bind f "+zoom; +attack; -attack; -zoom"
+
+//3)Weapons
+bind 0 "weaponbank 10"
+bind 1 "weaponbank 1"
+bind 2 "weaponbank 2"
+bind 3 "weaponbank 3"
+bind 4 "weaponbank 4"
+bind 5 "weaponbank 5"
+bind 6 "weaponbank 6"
+bind 7 "weaponbank 7"
+bind 8 "weaponbank 8"
+
+//bind "MOUSE4" "weaponbank 5"
+//bind "MOUSE5" "weaponbank 6"
+
+//4)Stuff
+
+bind "p" "team s"
+bind "[" "team b 1"
+bind "]" "team r 1"
+bind "F6" "vote yes"
+bind "F7" "vote no"
+
+bind "INS" "ready"
+bind "DEL" "notready"
+
+bind "HOME" "vstr rtime"
+bind "END" "vstr btime"
+
+seta icons_on "selectbuddy -2; set icons vstr icons_off; echo ^2Icons on."
+seta icons_off "selectbuddy -1; set icons vstr icons_on; echo ^2Icons off."
+set icons "vstr icons_on"
+bind "KP_DEL" "vstr icons"
+
+bind "n" "r_mode 7; r_fullscreen 0; vid_restart"
+bind "m" "r_mode 8; r_fullscreen 1; vid_restart"
+
+seta 71fps "set com_maxFPS 71; set fps vstr 125fps; echo ^471 FPS^7"
+seta 125fps "set com_maxFPS 125; set fps vstr 71fps; echo ^4125FPS^7"
+set fps "vstr 71fps"
+bind "9" "vstr fps"
+
+bind "k" "toggle s_mute"
+bind "KP_HOME" "vsay Hi Siemka!"
+bind "KP_UPARROW" "vsay cheer"
+bind "KP_PGUP" "vsay greatshot"
+bind "KP_RIGHTARROW" "vsay bye"
+bind "PGDN" "say ^7hf"
+bind "PGUP" "vsay goodgame"
+bind "b" "vsay cheer ^7POLSKA ^1POWAH^7"
+
+bind TAB "+scores"
+bind ALT "+stats"
+bind ESCAPE "togglemenu"
+bind , "mapzoomout"
+bind - "zoomout"
+bind . "mapzoomin"
+bind = "zoomin"
+bind ~ "toggleconsole"
+bind g "+mapexpand"
+bind l "openlimbomenu"
+
+bind y "messagemode"
+bind u "messagemode2"
+bind i "messagemode3"
+bind v "mp_quickmessage"
+
+bind F11 "autoscreenshot"
+bind F12 "autorecord"
+
+bind KP_ENTER "mp_fireteamadmin"
+
+bind MWHEELDOWN "+activate"
+bind MWHEELUP "+activate"
