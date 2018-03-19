@@ -68,4 +68,6 @@ set virtualedit = "block"
 " when completing commands, show a menu with all options
 set wildmenu
 
+set noswapfile
+
 colorscheme desert
