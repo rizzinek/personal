@@ -1,5 +1,8 @@
 " vimrc by rzn
 
+"execute pathogen#infect()
+"filetype plugin indent on
+
 " don't bother with vi compatibility
 set nocompatible
 
@@ -37,8 +40,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-
-
 "automatically read file when it is modified externally
 set autoread
 " let vim choose colors that look good either on dark or on light screen
@@ -52,8 +53,9 @@ set laststatus =2
 set lazyredraw
 " add characters to the list of stuff that gets in/decremented
 set nrformats += "alpha"
-" print line numbers
+" print relative line numbers
 set number
+set relativenumber
 " show cursor x and y position
 set ruler
 " when scrolling past the screen edges, show not a single line
@@ -70,4 +72,5 @@ set wildmenu
 
 set noswapfile
 
+syntax on
 colorscheme desert

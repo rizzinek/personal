@@ -1,0 +1,13 @@
+[alias]
+	ci = commit -m
+	cipa = !"git commit -m \"[PA-$1] $2\" #"
+	s = status
+	r = reset
+	rl = reset HEAD~
+	l = log -n
+	lmy = log --author=Nick -n
+	c = checkout
+	p = !"git pull origin $(git rev-parse --abbrev-ref HEAD) #"
+	d = diff
+	a = add
+	pp = !"git push origin $(git rev-parse --abbrev-ref HEAD) #"
